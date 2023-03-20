@@ -1,0 +1,1668 @@
+@font-face { 
+    font-family: 'Hammersmith'; 
+    src: url('Font/Hammersmith.ttf'); } 
+@font-face { 
+    font-family: 'Helvetica'; 
+    src: url('Font/Helvetica.ttf'); 
+} 
+@font-face { 
+    font-family: 'Constantia'; 
+    src: url('Font/constantia.ttf'); 
+}
+@media screen and (max-width:999px){
+    .wpage{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        border: none;
+    }
+    .header{
+        position: relative;
+        width: 100%;
+        height: 70px;
+        background-color: rgb(52, 52, 52);
+    }
+    .header-content{
+        width: 80%;
+        margin: 0px 10% 0px 10%;
+        
+    }
+    .header-list{
+        float: right;
+        margin-right: 10%;
+        width: 57%;
+        height: 100%;
+    }
+    .list{
+        font-size: 25px;
+        color: white;
+        font-family: "Constantia";
+        margin-top: 22px;
+        padding-inline-start: 0px;
+        text-align: center;
+    }
+    .HomeL, .AbL, .WorkL, .ContL{
+        padding: 22px 5% 18px 5%;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+         user-select: none;
+    }
+    .HomeL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .AbL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .WorkL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .ContL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .ArtworkLink:visited, .DetailsLink:visited, .HomeLink:visited{
+        color: white;
+    }
+    .Logo{
+        margin: 14px 0px 14px 0px;
+        float: left;
+    }
+    .Home{
+        position: relative;
+        background-color: rgb(42, 53, 62);
+        height: 700px;
+        width: 80%;
+        padding: 0px 10% 0px 10%;
+        background-image: url('Images/BGDesign.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .DetailsSection{
+        padding-top: 100px;
+        width: 50%;
+        
+    }
+    .Home h{
+        font-family: "Hammersmith";
+        color: white;
+        font-size: 30px;
+    }
+    .Home h2{
+        font-family: "Hammersmith";
+        color: white;
+        font-size: 50px;
+        margin: 0px;
+    }
+    .Home h3{
+        font-family: "Verdana", Sans-serif;
+        color: rgb(146, 214, 212);
+        font-size: 30px;
+        margin: 0px;
+    }
+    .Home p{
+        font-family: "Verdana", Sans-serif;
+        color: white;
+        font-size: 25px;
+        margin: 0px;
+    }
+    .Picture{
+        position: absolute;
+        float: right;
+        top:80px;
+        right: 2%;
+        z-index: 2;
+    }
+    .NikkoPic{
+        height: 600px;
+        filter: saturate(60%);
+        margin-top: 10px;
+    }
+    .NikkoPic:hover{
+        filter: saturate(100%);
+        margin-top: 0px;
+        transition-duration: 0.5s;
+    }
+    .gradi{
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        top: 270px;
+        background-image: linear-gradient(-180deg, rgba(255,0,0,0), rgb(26, 26, 26));
+    }
+    .About{
+        background-color: rgb(52, 52, 52);
+        width: 80%;
+        height: 500px;
+        padding: 0px 10% 0px 10%;
+        border-top:1px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom:1px;
+        border-style: solid;
+        border-color: white;
+        background-image: linear-gradient(90deg, rgb(33, 33, 34),rgb(52, 52, 54));
+        box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    .About h{
+        position: relative;
+        top: 50px;
+        color: white;
+        font-size: 55px;
+        font-family: "Hammersmith";
+    }
+    .PDetails{
+        background-color: rgb(26, 26, 26);
+        position: relative;
+        width: 80%;
+        height: 320px;
+        padding: 0px 10% 0px 10%;
+        top: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    .Qdetails{
+        float: left;
+        color: white;
+        font-family: "Times New Roman", sans-serif;
+        font-size: 25px;
+        line-height: 45px;
+    }
+    .Adetails{
+        float: right;
+        color: white;
+        font-family: "Times New Roman", sans-serif;
+        font-size: 25px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .Works{
+        position: relative;
+        width: 80%;
+        height: 800px;
+        padding: 0px 10% 0px 10%;
+        background-color: rgb(42, 53, 62);
+    }
+    .Works h{
+        position: relative;
+        top: 50px;
+        color: white;
+        font-size: 55px;
+        font-family: "Hammersmith";
+    }
+    .WorksC{
+        position: relative;
+        top:70px;
+        width: 90%;
+        height: 500px;
+        padding: 0px 5% 0px 5%;
+    }
+    .image1{
+        position: absolute;
+        float: left;
+        background: pink; /* Identify Tiles*/
+        left: 0%;
+        top: 5%;
+        width: 35%;
+        height: 75%;
+        z-index: 3;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdna.artstation.com/p/assets/images/images/055/131/688/medium/archyvedd-queen.jpg?1666192600);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image2{
+        position: absolute;
+        background: red; /* Identify Tiles*/
+        left: 30%;
+        width: 45%;
+        height: 60%;
+        z-index: 2;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/118/471/medium/archyvedd-house-of-dragon.jpg?1663791954);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    
+    .image3{
+        position: absolute;
+        background: blue; /* Identify Tiles*/
+        top:3%;
+        left: 70%;
+        width: 30%;
+        height: 60%;
+        z-index: 4;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdna.artstation.com/p/assets/images/images/054/603/364/medium/archyvedd-yelan-f.jpg?1664914720);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image4{
+        position: absolute;
+        background: green; /* Identify Tiles*/
+        top:45%;
+        left: 38%;
+        width: 30%;
+        height: 60%;
+        z-index: 4;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/055/207/979/medium/archyvedd-rhaenyra1.jpg?1666370298);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image5{
+        position: absolute;
+        background: grey; /* Identify Tiles*/
+        top:40%;
+        left: 65%;
+        width: 30%;
+        height: 60%;
+        z-index: 1;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/030/817/medium/archyvedd-tyrion.jpg?1663609690);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image6{
+        position: absolute;
+        background: black; /* Identify Tiles*/
+        top:43%;
+        left: 5%;
+        width: 40%;
+        height: 60%;
+        z-index: 1;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/067/717/medium/archyvedd-jamie-lannister.jpg?1663690670);
+        background-size: cover;
+        background-position-y: -55px;
+        filter: saturate(60%);
+    }
+    .image1:hover,.image2:hover,.image3:hover,.image4:hover,.image5:hover,.image6:hover{
+        z-index: 10;
+        filter: saturate(100%);
+        transition-duration: 0.3s;
+    }
+    .Queen{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .hotd{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .yelan{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .jamie{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .rhae{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .tyr{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .outerLink{
+        font-family: 'Helvetica';
+        background-color: rgb(44, 82, 98);
+        position: absolute;
+        top: 600px;
+        width: 40%;
+        height: 5%;
+        margin-left: 30%;
+        margin-right: 30%;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        opacity: 100%;
+        left: 0px;
+    }
+    .outerLink:hover{
+        opacity: 70%;
+    }
+    .Contact{
+        display: none;
+        float: right;
+        right: 13%;
+        position: absolute;
+        background-color: rgb(87, 86, 88);
+        top:70px;
+        width: 15%;
+        height: 80px;
+        border-radius: 10px;
+        /*background-image: linear-gradient(-45deg, rgb(191, 191, 202), rgb(178, 178, 196));*/
+    }
+    .fbclass{
+        position: inherit;
+        top:15px;
+        left: 10%;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        background-image: url("Images/FB.png");
+        background-size: 100% 100%;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+        filter: saturate(60%);
+    }
+    .igclass{
+        position: inherit;
+        top:15px;
+        left: 40%;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        background-image: url("Images/IG.png");
+        background-size: 100% 100%;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+        filter: saturate(60%);
+    }
+    .twclass{
+        position: inherit;
+        top:15px;
+        left: 70%;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        background-image: url("Images/Tw.png");
+        background-size: 100% 100%;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+        filter: saturate(60%);
+    }
+    .fb, .ig, .tw{
+        position: inherit;
+        width: 100%;
+        height: 100%;
+    }
+    .fbclass:hover{
+        top: 5px;
+        width: 70px;
+        height: 70px;
+        left: 8%;
+        filter: saturate(100%);
+        transition-duration: 0.5s;
+    }
+    .igclass:hover{
+        top: 5px;
+        width: 70px;
+        height: 70px;
+        left: 38%;
+        filter: saturate(100%);
+        transition-duration: 0.5s;
+    }
+    .twclass:hover{
+        top: 5px;
+        width: 70px;
+        height: 70px;
+        left: 68%;
+        filter: saturate(100%);
+        transition-duration: 0.5s;
+    }
+    }
+@media screen and (max-width:1399px) and (min-width:1000px){
+    .wpage{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        border: none;
+    }
+    .header{
+        position: relative;
+        width: 100%;
+        height: 70px;
+        background-color: rgb(52, 52, 52);
+    }
+    .header-content{
+        width: 80%;
+        margin: 0px 10% 0px 10%;
+        
+    }
+    .header-list{
+        float: right;
+        margin-right: 10%;
+        width: 57%;
+        height: 100%;
+    }
+    .list{
+        font-size: 25px;
+        color: white;
+        font-family: "Constantia";
+        margin-top: 22px;
+        padding-inline-start: 0px;
+        text-align: center;
+    }
+    .HomeL, .AbL, .WorkL, .ContL{
+        padding: 22px 5% 18px 5%;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+         user-select: none;
+    }
+    .HomeL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .AbL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .WorkL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .ContL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .ArtworkLink:visited, .DetailsLink:visited, .HomeLink:visited{
+        color: white;
+    }
+    .Logo{
+        margin: 14px 0px 14px 0px;
+        float: left;
+    }
+    .Home{
+        position: relative;
+        background-color: rgb(42, 53, 62);
+        height: 700px;
+        width: 80%;
+        padding: 0px 10% 0px 10%;
+        background-image: url('Images/BGDesign.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .DetailsSection{
+        padding-top: 100px;
+        width: 50%;
+        
+    }
+    .Home h{
+        font-family: "Hammersmith";
+        color: white;
+        font-size: 30px;
+    }
+    .Home h2{
+        font-family: "Hammersmith";
+        color: white;
+        font-size: 50px;
+        margin: 0px;
+    }
+    .Home h3{
+        font-family: "Verdana", Sans-serif;
+        color: rgb(146, 214, 212);
+        font-size: 30px;
+        margin: 0px;
+    }
+    .Home p{
+        font-family: "Verdana", Sans-serif;
+        color: white;
+        font-size: 25px;
+        margin: 0px;
+    }
+    .Picture{
+        position: absolute;
+        float: right;
+        top:80px;
+        right: 2%;
+        z-index: 2;
+    }
+    .NikkoPic{
+        height: 600px;
+        filter: saturate(60%);
+        margin-top: 10px;
+    }
+    .NikkoPic:hover{
+        filter: saturate(100%);
+        margin-top: 0px;
+        transition-duration: 0.5s;
+    }
+    .gradi{
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        top: 270px;
+        background-image: linear-gradient(-180deg, rgba(255,0,0,0), rgb(26, 26, 26));
+    }
+    .About{
+        background-color: rgb(52, 52, 52);
+        width: 80%;
+        height: 500px;
+        padding: 0px 10% 0px 10%;
+        border-top:1px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom:1px;
+        border-style: solid;
+        border-color: white;
+        background-image: linear-gradient(90deg, rgb(33, 33, 34),rgb(52, 52, 54));
+        box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    .About h{
+        position: relative;
+        top: 50px;
+        color: white;
+        font-size: 55px;
+        font-family: "Hammersmith";
+    }
+    .PDetails{
+        background-color: rgb(26, 26, 26);
+        position: relative;
+        width: 80%;
+        height: 320px;
+        padding: 0px 10% 0px 10%;
+        top: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    .Qdetails{
+        float: left;
+        color: white;
+        font-family: "Times New Roman", sans-serif;
+        font-size: 25px;
+        line-height: 45px;
+    }
+    .Adetails{
+        float: right;
+        color: white;
+        font-family: "Times New Roman", sans-serif;
+        font-size: 25px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .Works{
+        position: relative;
+        width: 80%;
+        height: 800px;
+        padding: 0px 10% 0px 10%;
+        background-color: rgb(42, 53, 62);
+    }
+    .Works h{
+        position: relative;
+        top: 50px;
+        color: white;
+        font-size: 55px;
+        font-family: "Hammersmith";
+    }
+    .WorksC{
+        position: relative;
+        top:70px;
+        width: 90%;
+        height: 500px;
+        padding: 0px 5% 0px 5%;
+    }
+    .image1{
+        position: absolute;
+        float: left;
+        background: pink; /* Identify Tiles*/
+        left: 0%;
+        top: 5%;
+        width: 35%;
+        height: 75%;
+        z-index: 3;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdna.artstation.com/p/assets/images/images/055/131/688/medium/archyvedd-queen.jpg?1666192600);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image2{
+        position: absolute;
+        background: red; /* Identify Tiles*/
+        left: 30%;
+        width: 45%;
+        height: 60%;
+        z-index: 2;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/118/471/medium/archyvedd-house-of-dragon.jpg?1663791954);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    
+    .image3{
+        position: absolute;
+        background: blue; /* Identify Tiles*/
+        top:3%;
+        left: 70%;
+        width: 30%;
+        height: 60%;
+        z-index: 4;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdna.artstation.com/p/assets/images/images/054/603/364/medium/archyvedd-yelan-f.jpg?1664914720);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image4{
+        position: absolute;
+        background: green; /* Identify Tiles*/
+        top:45%;
+        left: 38%;
+        width: 30%;
+        height: 60%;
+        z-index: 4;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/055/207/979/medium/archyvedd-rhaenyra1.jpg?1666370298);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image5{
+        position: absolute;
+        background: grey; /* Identify Tiles*/
+        top:40%;
+        left: 65%;
+        width: 30%;
+        height: 60%;
+        z-index: 1;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/030/817/medium/archyvedd-tyrion.jpg?1663609690);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image6{
+        position: absolute;
+        background: black; /* Identify Tiles*/
+        top:43%;
+        left: 5%;
+        width: 40%;
+        height: 60%;
+        z-index: 1;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/067/717/medium/archyvedd-jamie-lannister.jpg?1663690670);
+        background-size: cover;
+        background-position-y: -55px;
+        filter: saturate(60%);
+    }
+    .image1:hover,.image2:hover,.image3:hover,.image4:hover,.image5:hover,.image6:hover{
+        z-index: 10;
+        filter: saturate(100%);
+        transition-duration: 0.3s;
+    }
+    .Queen{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .hotd{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .yelan{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .jamie{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .rhae{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .tyr{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .outerLink{
+        font-family: 'Helvetica';
+        background-color: rgb(44, 82, 98);
+        position: absolute;
+        top: 600px;
+        width: 40%;
+        height: 5%;
+        margin-left: 30%;
+        margin-right: 30%;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        opacity: 100%;
+        left: 0px;
+    }
+    .outerLink:hover{
+        opacity: 70%;
+    }
+    .Contact{
+        display: none;
+        float: right;
+        right: 13%;
+        position: absolute;
+        background-color: rgb(87, 86, 88);
+        top:70px;
+        width: 15%;
+        height: 80px;
+        border-radius: 10px;
+        /*background-image: linear-gradient(-45deg, rgb(191, 191, 202), rgb(178, 178, 196));*/
+    }
+    .fbclass{
+        position: inherit;
+        top:15px;
+        left: 10%;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        background-image: url("Images/FB.png");
+        background-size: 100% 100%;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+        filter: saturate(60%);
+    }
+    .igclass{
+        position: inherit;
+        top:15px;
+        left: 40%;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        background-image: url("Images/IG.png");
+        background-size: 100% 100%;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+        filter: saturate(60%);
+    }
+    .twclass{
+        position: inherit;
+        top:15px;
+        left: 70%;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        background-image: url("Images/Tw.png");
+        background-size: 100% 100%;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+        filter: saturate(60%);
+    }
+    .fb, .ig, .tw{
+        position: inherit;
+        width: 100%;
+        height: 100%;
+    }
+    .fbclass:hover{
+        top: 5px;
+        width: 70px;
+        height: 70px;
+        left: 8%;
+        filter: saturate(100%);
+        transition-duration: 0.5s;
+    }
+    .igclass:hover{
+        top: 5px;
+        width: 70px;
+        height: 70px;
+        left: 38%;
+        filter: saturate(100%);
+        transition-duration: 0.5s;
+    }
+    .twclass:hover{
+        top: 5px;
+        width: 70px;
+        height: 70px;
+        left: 68%;
+        filter: saturate(100%);
+        transition-duration: 0.5s;
+    }
+    }
+@media screen and (max-width:1799px) and (min-width:1400px){
+    .wpage{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        border: none;
+    }
+    .header{
+        position: relative;
+        width: 100%;
+        height: 70px;
+        background-color: rgb(52, 52, 52);
+    }
+    .header-content{
+        width: 80%;
+        margin: 0px 10% 0px 10%;
+        
+    }
+    .header-list{
+        float: right;
+        margin-right: 10%;
+        width: 40%;
+        height: 100%;
+    }
+    .list{
+        font-size: 25px;
+        color: white;
+        font-family: "Constantia";
+        margin-top: 22px;
+        padding-inline-start: 0px;
+        text-align: center;
+    }
+    .HomeL, .AbL, .WorkL, .ContL{
+        padding: 22px 5% 18px 5%;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+         user-select: none;
+    }
+    .HomeL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .AbL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .WorkL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .ContL:hover{
+        background-color: rgb(87, 86, 88);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .ArtworkLink:visited, .DetailsLink:visited, .HomeLink:visited{
+        color: white;
+    }
+    .Logo{
+        margin: 14px 0px 14px 0px;
+        float: left;
+    }
+    .Home{
+        position: relative;
+        background-color: rgb(42, 53, 62);
+        height: 1000px;
+        width: 80%;
+        padding: 0px 10% 0px 10%;
+        background-image: url('Images/BGDesign.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .DetailsSection{
+        padding-top: 100px;
+        width: 55%;
+        
+    }
+    .Home h{
+        font-family: "Hammersmith";
+        color: white;
+        font-size: 33px;
+    }
+    .Home h2{
+        font-family: "Hammersmith";
+        color: white;
+        font-size: 90px;
+        margin: 0px;
+    }
+    .Home h3{
+        font-family: "Verdana", Sans-serif;
+        color: rgb(146, 214, 212);
+        font-size: 30px;
+        margin: 0px;
+    }
+    .Home p{
+        font-family: "Verdana", Sans-serif;
+        color: white;
+        font-size: 30px;
+        margin: 0px;
+    }
+    .Picture{
+        position: absolute;
+        float: right;
+        top:80px;
+        right: 2%;
+        z-index: 2;
+    }
+    .NikkoPic{
+        height: 800px;
+        filter: saturate(60%);
+        margin-top: 10px;
+    }
+    .NikkoPic:hover{
+        filter: saturate(100%);
+        margin-top: 0px;
+        transition-duration: 0.5s;
+    }
+    .gradi{
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        top: 570px;
+        background-image: linear-gradient(-180deg, rgba(255,0,0,0), rgb(26, 26, 26));
+    }
+    .About{
+        background-color: rgb(52, 52, 52);
+        width: 80%;
+        height: 500px;
+        padding: 0px 10% 0px 10%;
+        border-top:1px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom:1px;
+        border-style: solid;
+        border-color: white;
+        background-image: linear-gradient(90deg, rgb(33, 33, 34),rgb(52, 52, 54));
+        box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    .About h{
+        position: relative;
+        top: 50px;
+        color: white;
+        font-size: 55px;
+        font-family: "Hammersmith";
+    }
+    .PDetails{
+        background-color: rgb(26, 26, 26);
+        position: relative;
+        width: 60%;
+        height: 320px;
+        margin: 0px 10% 0px 10%;
+        padding: 0px 10% 0px 10%;
+        top: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    .Qdetails{
+        float: left;
+        color: white;
+        font-family: "Times New Roman", sans-serif;
+        font-size: 25px;
+        line-height: 45px;
+    }
+    .Adetails{
+        float: right;
+        color: white;
+        font-family: "Times New Roman", sans-serif;
+        font-size: 25px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .Works{
+        position: relative;
+        width: 80%;
+        height: 1200px;
+        padding: 0px 10% 0px 10%;
+        background-color: rgb(42, 53, 62);
+    }
+    .Works h{
+        position: relative;
+        top: 50px;
+        color: white;
+        font-size: 55px;
+        font-family: "Hammersmith";
+    }
+    .WorksC{
+        position: relative;
+        top:70px;
+        width: 90%;
+        height: 70%;
+        padding: 0px 5% 0px 5%;
+    }
+    .image1{
+        position: absolute;
+        float: left;
+        background: pink; /* Identify Tiles*/
+        left: 0%;
+        top: 5%;
+        width: 35%;
+        height: 75%;
+        z-index: 3;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdna.artstation.com/p/assets/images/images/055/131/688/medium/archyvedd-queen.jpg?1666192600);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image2{
+        position: absolute;
+        background: red; /* Identify Tiles*/
+        left: 30%;
+        width: 45%;
+        height: 60%;
+        z-index: 2;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/118/471/medium/archyvedd-house-of-dragon.jpg?1663791954);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    
+    .image3{
+        position: absolute;
+        background: blue; /* Identify Tiles*/
+        top:3%;
+        left: 70%;
+        width: 30%;
+        height: 60%;
+        z-index: 4;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdna.artstation.com/p/assets/images/images/054/603/364/medium/archyvedd-yelan-f.jpg?1664914720);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image4{
+        position: absolute;
+        background: green; /* Identify Tiles*/
+        top:45%;
+        left: 38%;
+        width: 30%;
+        height: 60%;
+        z-index: 4;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/055/207/979/medium/archyvedd-rhaenyra1.jpg?1666370298);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image5{
+        position: absolute;
+        background: grey; /* Identify Tiles*/
+        top:40%;
+        left: 65%;
+        width: 30%;
+        height: 60%;
+        z-index: 1;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/030/817/medium/archyvedd-tyrion.jpg?1663609690);
+        background-size: cover;
+        filter: saturate(60%);
+    }
+    .image6{
+        position: absolute;
+        background: black; /* Identify Tiles*/
+        top:43%;
+        left: 5%;
+        width: 40%;
+        height: 60%;
+        z-index: 1;
+        box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/067/717/medium/archyvedd-jamie-lannister.jpg?1663690670);
+        background-size: cover;
+        background-position-y: -55px;
+        filter: saturate(60%);
+    }
+    .image1:hover,.image2:hover,.image3:hover,.image4:hover,.image5:hover,.image6:hover{
+        z-index: 10;
+        filter: saturate(100%);
+        transition-duration: 0.3s;
+    }
+    .Queen{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .hotd{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .yelan{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .jamie{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .rhae{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .tyr{
+        position: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .outerLink{
+        font-family: 'Helvetica';
+        background-color: rgb(44, 82, 98);
+        position: absolute;
+        top: 950px;
+        width: 40%;
+        height: 5%;
+        margin-left: 30%;
+        margin-right: 30%;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        opacity: 100%;
+        left: 0px;
+    }
+    .outerLink:hover{
+        opacity: 70%;
+    }
+    .Contact{
+        display: none;
+        float: right;
+        right: 9%;
+        position: absolute;
+        background-color: rgb(87, 86, 88);
+        top:70px;
+        width: 15%;
+        height: 80px;
+        border-radius: 10px;
+        /*background-image: linear-gradient(-45deg, rgb(191, 191, 202), rgb(178, 178, 196));*/
+    }
+    .fbclass{
+        position: inherit;
+        top:15px;
+        left: 10%;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        background-image: url("Images/FB.png");
+        background-size: 100% 100%;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+        filter: saturate(60%);
+    }
+    .igclass{
+        position: inherit;
+        top:15px;
+        left: 40%;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        background-image: url("Images/IG.png");
+        background-size: 100% 100%;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+        filter: saturate(60%);
+    }
+    .twclass{
+        position: inherit;
+        top:15px;
+        left: 70%;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        background-image: url("Images/Tw.png");
+        background-size: 100% 100%;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+        filter: saturate(60%);
+    }
+    .fb, .ig, .tw{
+        position: inherit;
+        width: 100%;
+        height: 100%;
+    }
+    .fbclass:hover{
+        top: 5px;
+        width: 70px;
+        height: 70px;
+        left: 8%;
+        filter: saturate(100%);
+        transition-duration: 0.5s;
+    }
+    .igclass:hover{
+        top: 5px;
+        width: 70px;
+        height: 70px;
+        left: 38%;
+        filter: saturate(100%);
+        transition-duration: 0.5s;
+    }
+    .twclass:hover{
+        top: 5px;
+        width: 70px;
+        height: 70px;
+        left: 68%;
+        filter: saturate(100%);
+        transition-duration: 0.5s;
+    }
+    }
+@media screen and (min-width:1800px){
+.wpage{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border: none;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(52, 52, 52);
+}
+.header-content{
+    width: 80%;
+    margin: 0px 10% 0px 10%;
+    
+}
+.header-list{
+    float: right;
+    margin-right: 10%;
+    width: 40%;
+    height: 100%;
+}
+.list{
+    font-size: 25px;
+    color: white;
+    font-family: "Constantia";
+    margin-top: 22px;
+    padding-inline-start: 0px;
+    text-align: center;
+}
+.HomeL, .AbL, .WorkL, .ContL{
+    padding: 22px 5% 18px 5%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+}
+.HomeL:hover{
+    background-color: rgb(87, 86, 88);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.AbL:hover{
+    background-color: rgb(87, 86, 88);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.WorkL:hover{
+    background-color: rgb(87, 86, 88);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.ContL:hover{
+    background-color: rgb(87, 86, 88);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.ArtworkLink:visited, .DetailsLink:visited, .HomeLink:visited{
+    color: white;
+}
+.Logo{
+    margin: 14px 0px 14px 0px;
+    float: left;
+}
+.Home{
+    position: relative;
+    background-color: rgb(42, 53, 62);
+    height: 1000px;
+    width: 80%;
+    padding: 0px 10% 0px 10%;
+    background-image: url('Images/BGDesign.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.DetailsSection{
+    padding-top: 100px;
+    width: 55%;
+    
+}
+.Home h{
+    font-family: "Hammersmith";
+    color: white;
+    font-size: 33px;
+}
+.Home h2{
+    font-family: "Hammersmith";
+    color: white;
+    font-size: 90px;
+    margin: 0px;
+}
+.Home h3{
+    font-family: "Verdana", Sans-serif;
+    color: rgb(146, 214, 212);
+    font-size: 30px;
+    margin: 0px;
+}
+.Home p{
+    font-family: "Verdana", Sans-serif;
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+}
+.Picture{
+    position: absolute;
+    float: right;
+    top:80px;
+    right: 5%;
+    z-index: 2;
+}
+.NikkoPic{
+    height: 900px;
+    filter: saturate(60%);
+    margin-top: 10px;
+}
+.NikkoPic:hover{
+    filter: saturate(100%);
+    margin-top: 0px;
+    transition-duration: 0.5s;
+}
+.gradi{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 570px;
+    background-image: linear-gradient(-180deg, rgba(255,0,0,0), rgb(26, 26, 26));
+}
+.About{
+    background-color: rgb(52, 52, 52);
+    width: 80%;
+    height: 500px;
+    padding: 0px 10% 0px 10%;
+    border-top:1px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom:1px;
+    border-style: solid;
+    border-color: white;
+    background-image: linear-gradient(90deg, rgb(33, 33, 34),rgb(52, 52, 54));
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.About h{
+    position: relative;
+    top: 50px;
+    color: white;
+    font-size: 55px;
+    font-family: "Hammersmith";
+}
+.PDetails{
+    background-color: rgb(26, 26, 26);
+    position: relative;
+    width: 60%;
+    height: 320px;
+    margin: 0px 10% 0px 10%;
+    padding: 0px 10% 0px 10%;
+    top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.Qdetails{
+    float: left;
+    color: white;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 25px;
+    line-height: 45px;
+}
+.Adetails{
+    float: right;
+    color: white;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 25px;
+    line-height: 45px;
+    text-align: center;
+}
+.Works{
+    position: relative;
+    width: 80%;
+    height: 1200px;
+    padding: 0px 10% 0px 10%;
+    background-color: rgb(42, 53, 62);
+}
+.Works h{
+    position: relative;
+    top: 50px;
+    color: white;
+    font-size: 55px;
+    font-family: "Hammersmith";
+}
+.WorksC{
+    position: relative;
+    top:70px;
+    width: 90%;
+    height: 70%;
+    padding: 0px 5% 0px 5%;
+}
+.image1{
+    position: absolute;
+    float: left;
+    background: pink; /* Identify Tiles*/
+    left: 0%;
+    top: 5%;
+    width: 35%;
+    height: 75%;
+    z-index: 3;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/055/131/688/medium/archyvedd-queen.jpg?1666192600);
+    background-size: cover;
+    filter: saturate(60%);
+}
+.image2{
+    position: absolute;
+    background: red; /* Identify Tiles*/
+    left: 30%;
+    width: 45%;
+    height: 60%;
+    z-index: 2;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/118/471/medium/archyvedd-house-of-dragon.jpg?1663791954);
+    background-size: cover;
+    filter: saturate(60%);
+}
+
+.image3{
+    position: absolute;
+    background: blue; /* Identify Tiles*/
+    top:3%;
+    left: 70%;
+    width: 30%;
+    height: 60%;
+    z-index: 4;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/054/603/364/medium/archyvedd-yelan-f.jpg?1664914720);
+    background-size: cover;
+    filter: saturate(60%);
+}
+.image4{
+    position: absolute;
+    background: green; /* Identify Tiles*/
+    top:45%;
+    left: 38%;
+    width: 30%;
+    height: 60%;
+    z-index: 4;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/055/207/979/medium/archyvedd-rhaenyra1.jpg?1666370298);
+    background-size: cover;
+    filter: saturate(60%);
+}
+.image5{
+    position: absolute;
+    background: grey; /* Identify Tiles*/
+    top:40%;
+    left: 65%;
+    width: 30%;
+    height: 60%;
+    z-index: 1;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/030/817/medium/archyvedd-tyrion.jpg?1663609690);
+    background-size: cover;
+    filter: saturate(60%);
+}
+.image6{
+    position: absolute;
+    background: black; /* Identify Tiles*/
+    top:43%;
+    left: 5%;
+    width: 40%;
+    height: 60%;
+    z-index: 1;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/054/067/717/medium/archyvedd-jamie-lannister.jpg?1663690670);
+    background-size: cover;
+    background-position-y: -55px;
+    filter: saturate(60%);
+}
+.image1:hover,.image2:hover,.image3:hover,.image4:hover,.image5:hover,.image6:hover{
+    z-index: 10;
+    filter: saturate(100%);
+    transition-duration: 0.3s;
+}
+.Queen{
+    position: inherit;
+    height: 100%;
+    width: 100%;
+}
+.hotd{
+    position: inherit;
+    height: 100%;
+    width: 100%;
+}
+.yelan{
+    position: inherit;
+    height: 100%;
+    width: 100%;
+}
+.jamie{
+    position: inherit;
+    height: 100%;
+    width: 100%;
+}
+.rhae{
+    position: inherit;
+    height: 100%;
+    width: 100%;
+}
+.tyr{
+    position: inherit;
+    height: 100%;
+    width: 100%;
+}
+.outerLink{
+    font-family: 'Helvetica';
+    background-color: rgb(44, 82, 98);
+    position: absolute;
+    top: 950px;
+    width: 40%;
+    height: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    opacity: 100%;
+    left: 0px;
+}
+.outerLink:hover{
+    opacity: 70%;
+}
+.Contact{
+    display: none;
+    right: 11%;
+    position: absolute;
+    background-color: rgb(87, 86, 88);
+    top:70px;
+    width: 15%;
+    height: 80px;
+    border-radius: 10px;
+    /*background-image: linear-gradient(-45deg, rgb(191, 191, 202), rgb(178, 178, 196));*/
+}
+.fbclass{
+    position: inherit;
+    top:15px;
+    left: 10%;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    background-image: url("Images/FB.png");
+    background-size: 100% 100%;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    filter: saturate(60%);
+}
+.igclass{
+    position: inherit;
+    top:15px;
+    left: 40%;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    background-image: url("Images/IG.png");
+    background-size: 100% 100%;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    filter: saturate(60%);
+}
+.twclass{
+    position: inherit;
+    top:15px;
+    left: 70%;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    background-image: url("Images/Tw.png");
+    background-size: 100% 100%;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    filter: saturate(60%);
+}
+.fb, .ig, .tw{
+    position: inherit;
+    width: 100%;
+    height: 100%;
+}
+.fbclass:hover{
+    top: 5px;
+    width: 70px;
+    height: 70px;
+    left: 8%;
+    filter: saturate(100%);
+    transition-duration: 0.5s;
+}
+.igclass:hover{
+    top: 5px;
+    width: 70px;
+    height: 70px;
+    left: 38%;
+    filter: saturate(100%);
+    transition-duration: 0.5s;
+}
+.twclass:hover{
+    top: 5px;
+    width: 70px;
+    height: 70px;
+    left: 68%;
+    filter: saturate(100%);
+    transition-duration: 0.5s;
+}
+}
